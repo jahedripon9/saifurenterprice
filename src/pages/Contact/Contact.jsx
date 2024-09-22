@@ -32,7 +32,7 @@ const Contact = () => {
           <button  className="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Contact Us</button>
         </div>
         <div  className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <a  className="text-indigo-500 font-medium text-xl">saifurenterprice@email.com</a> <br />
+          <a  className="text-indigo-500 font-medium text-xl">saifurenterprise@email.com</a> <br />
           <a  className="text-green-500 font-medium text-xl my-10">Mobile: 01728 105533</a>
           <p  className="leading-normal my-5 font-bold text-xl">Shop-39, 3rd floor,
             <br />Surma Tower, Vip Road Taltola Sylhet - 3100, Sylhet, Bangladesh
