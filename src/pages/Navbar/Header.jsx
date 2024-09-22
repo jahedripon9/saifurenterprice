@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='container mx-auto'>
-      <div className="navbar">
+    <div className='  '>
+      <div className="navbar fixed bg-gray-200 rounded-b-xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Header = () => {
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <a className=" text-red-600 font-bold text-sm lg:text-3xl">Saifur Enterprise</a>
+          <a href='/' className=" text-red-600 font-bold text-sm lg:text-3xl">Saifur Enterprise</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium text-xl">
