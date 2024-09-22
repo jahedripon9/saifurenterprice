@@ -2,7 +2,7 @@
 import logo from '../../assets/logo.png'
 const Footer = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto bg-slate-100 rounded-t-2xl">
 <footer className="text-gray-600 body-font"> <hr />
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
