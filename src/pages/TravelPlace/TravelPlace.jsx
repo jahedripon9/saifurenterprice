@@ -12,7 +12,7 @@ const TravelPlace = () => {
     <div className='container mx-auto' id='place'>
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
-  <h2 className="text-center text-4xl font-bold">Your Travel Information</h2>
+  <h2 className="text-center text-4xl font-bold">The Best travel places ever</h2>
       <p className="text-center text-lg mt-4 mb-12 text-gray-500">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       </p>
