@@ -9,7 +9,6 @@ const TravelInfo = () => {
       <p className="text-center text-lg mt-4 mb-12 text-gray-500">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       </p>
-
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Card 1 - Select Destination */}
         <div className="bg-white border border-gray-200 shadow-md rounded-tr-3xl rounded-bl-3xl p-6 flex items-center hover:shadow-xl  transition duration-300">
