@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='  '>
-      <div className="navbar fixed bg-gray-200 rounded-b-xl">
+      <div className="navbar fixed bg-gray-200 rounded-b-xl z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
