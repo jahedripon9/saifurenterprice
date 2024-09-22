@@ -1,6 +1,9 @@
 const Hero = () => {
     return ( 
-      <div className="hero min-h-screen"
+      <div className="hero min-h-screen container mx-auto"
+      style={{
+        backgroundImage: "url(https://i.ibb.co.com/Vp1m13s/hero-area-bg.jpg)",
+      }}
       >
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
