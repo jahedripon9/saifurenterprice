@@ -1,5 +1,5 @@
-import destinationImage from "../../assets/destination-drawn-hand-svgrepo-com.svg";
 import bookingImage from "../../assets/air-booking-ticket-svgrepo-com.svg";
+import destinationImage from "../../assets/destination-drawn-hand-svgrepo-com.svg";
 import flightImage from "../../assets/flight-svgrepo-com.svg";
 
 const TravelInfo = () => {

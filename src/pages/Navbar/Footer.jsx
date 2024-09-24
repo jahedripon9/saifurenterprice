@@ -1,5 +1,4 @@
 
-import logo from '../../assets/logo.png'
 const Footer = () => {
   return (
     <div className="container mx-auto bg-slate-100 rounded-t-2xl">

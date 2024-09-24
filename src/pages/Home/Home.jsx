@@ -4,14 +4,17 @@ import Experience from "../Experience/Experience"
 import Hero from "../Hero/Hero"
 import Footer from "../Navbar/Footer"
 import Header from "../Navbar/Header"
+import PackageTab from "../Package/PackageTab.jsx"
 import TravelInfo from "../TravelInfo/TravelInfo"
 import TravelPlace from "../TravelPlace/TravelPlace"
+
 
 const Home = () => {
   return (
     <div>
         <Header />
         <Hero/>
+        <PackageTab />
         <TravelInfo />
         <TravelPlace />
         <Experience />

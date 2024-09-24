@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='  '>
-      <div className="navbar fixed bg-gray-200 rounded-b-xl z-10">
+      <div className="navbar fixed bg-gray-200 rounded-b-xl z-10 opacity-75">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
               <li><a href="#info">Travel Info</a></li>
               <li><a href="#place">Travel Place</a></li>
               <li><a href="#experience">Experience</a></li>
