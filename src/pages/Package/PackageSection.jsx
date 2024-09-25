@@ -13,6 +13,7 @@ const packages = [
         adId: 'AD12345',
         destination: 'India',
         price: 'BDT 37,000 per person',
+        itinerary: ['8 Days 7 Nights Kalimpong- Darjeeling- Pelling- Gangtok'],
         imageUrl: indiaImage,
         inclusions: [
             '1 Night in Kalimpong (Hotel Mountain View or similar)',
@@ -31,6 +32,7 @@ const packages = [
         adId: 'AD12346',
         destination: 'Sri Lanka',
         price: 'BDT 45,000 per person',
+        itinerary: ['Colombo,', ' Kandy,', ' & Bentota'],
         imageUrl: SriLankaImage,
         inclusions: [
             '2 Nights in Colombo (Hotel Cinnamon Red or similar)',
@@ -48,6 +50,7 @@ const packages = [
         adId: 'AD12347',
         destination: 'Maldives',
         price: 'BDT 80,000 per person',
+        itinerary: ['Maldives'],
         imageUrl: maldivesImage,
         inclusions: [
             '3 Nights in Maldives (Resort Island Villa or similar)',
