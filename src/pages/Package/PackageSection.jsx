@@ -2,6 +2,10 @@
 import React, { useState } from 'react';
 import PackageCard from './PackageCard';
 import Modal from './Modal';
+import indiaImage from '../../assets/india.jpg';
+import SriLankaImage from '../../assets/srilanka.jpg';
+import maldivesImage from '../../assets/india.jpg';
+
 
 const packages = [
     {
@@ -9,6 +13,7 @@ const packages = [
         adId: 'AD12345',
         destination: 'India',
         price: 'BDT 37,000 per person',
+        imageUrl: indiaImage,
         inclusions: [
             '1 Night in Kalimpong (Hotel Mountain View or similar)',
             '2 Nights in Darjeeling (Hotel Yuma or similar)',
@@ -26,6 +31,7 @@ const packages = [
         adId: 'AD12346',
         destination: 'Sri Lanka',
         price: 'BDT 45,000 per person',
+        imageUrl: SriLankaImage,
         inclusions: [
             '2 Nights in Colombo (Hotel Cinnamon Red or similar)',
             '2 Nights in Kandy (Hotel Earls Regency or similar)',
@@ -42,6 +48,7 @@ const packages = [
         adId: 'AD12347',
         destination: 'Maldives',
         price: 'BDT 80,000 per person',
+        imageUrl: maldivesImage,
         inclusions: [
             '3 Nights in Maldives (Resort Island Villa or similar)',
             'All meals included',
@@ -52,6 +59,7 @@ const packages = [
         ],
         colors: ['#D21034', '#007E3A', '#FFFFFF'],
         countryCode: 'MV', // Maldives
+        
     },
 ];
 

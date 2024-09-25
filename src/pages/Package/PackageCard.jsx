@@ -1,6 +1,5 @@
 // src/components/PackageCard.js
 import React from 'react';
-
 // Static flag images
 const flagImages = {
     India: 'https://flagcdn.com/in.svg', // Flag for India
@@ -11,15 +10,19 @@ const flagImages = {
 const PackageCard = ({ pkg, openModal }) => {
     return (
         <div
-            className="p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow text-black "
+            className="p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow text-black text-center "
             onClick={() => openModal(pkg)}
         >
-            <div className="flex items-center space-x-2 justify-center">
+            <figure>
+                <img className='rounded-lg ' src={pkg.imageUrl} alt="travel" />
+            </figure>
+            <div className="flex items-center space-x-2 justify-center mt-5">
                 {/* Display Static Flag Image */}
                 <img src={flagImages[pkg.destination]} alt={`${pkg.destination} flag`} className="w-6 h-6 rounded-sm" />
-                <h3 className="text-xl font-semibold ">{pkg.destination}</h3>
-            </div>
-            <p className="text-gray-800 mt-2 text-center">{pkg.price}</p>
+                <h3 className="text-2xl font-semibold ">{pkg.destination}</h3> 
+            </div><hr />
+            <p className="text-gray-800 mt-2 text-center font-medium">{pkg.price}</p>
+            <button className='btn btn-outline my-2'>More Information</button>
         </div>
     );
 };
