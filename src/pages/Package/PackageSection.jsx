@@ -61,6 +61,24 @@ const packages = [
         countryCode: 'MV', // Maldives
         
     },
+    {
+        id: 'PKG003',
+        adId: 'AD12347',
+        destination: 'Maldives',
+        price: 'BDT 80,000 per person',
+        imageUrl: maldivesImage,
+        inclusions: [
+            '3 Nights in Maldives (Resort Island Villa or similar)',
+            'All meals included',
+            'Snorkeling and water activities',
+            'Meet & Assist',
+            'Transfers by speedboat',
+            'All sightseeing as per itinerary',
+        ],
+        colors: ['#D21034', '#007E3A', '#FFFFFF'],
+        countryCode: 'MV', // Maldives
+        
+    },
 ];
 
 const PackageSection = () => {
@@ -75,7 +93,7 @@ const PackageSection = () => {
     };
 
     return (
-        <div className="p-6 bg-gray-100">
+        <div className="p-6 container mx-auto">
             <h2 className="text-2xl font-bold text-center mb-6">Tour Packages</h2>
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {packages.map((pkg) => (

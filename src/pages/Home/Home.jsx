@@ -5,7 +5,7 @@ import Hero from "../Hero/Hero"
 import Footer from "../Navbar/Footer"
 import Header from "../Navbar/Header"
 import PackageSection from "../Package/PackageSection.jsx"
-import PackageTab from "../Package/PackageTab.jsx"
+// import PackageTab from "../Package/PackageTab.jsx"
 import TravelInfo from "../TravelInfo/TravelInfo"
 import TravelPlace from "../TravelPlace/TravelPlace"
 
@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
-      <PackageTab />
+      {/* <PackageTab /> */}
       <PackageSection />
       <TravelInfo />
       <TravelPlace />
