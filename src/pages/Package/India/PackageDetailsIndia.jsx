@@ -97,7 +97,7 @@ const PackageDetailsIndia = () => {
                     or similar.
                   </li>
                   <li>
-                    {" "}
+                  
                     02 Nights accommodation in Gangtok at The Ridge Hotel or
                     similar.
                   </li>
