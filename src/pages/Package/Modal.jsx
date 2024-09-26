@@ -18,65 +18,60 @@ const Modal = ({ pkg, closeModal }) => {
 
     return (
         <div 
-            className="fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ease-out flex items-center justify-center"
+            className="fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ease-out"
             role="dialog" 
             aria-modal="true"
             onClick={closeModal}
         >
             <div 
                 id="modal"
-                className="bg-white h-full w-full md:max-w-3xl mx-auto rounded-lg shadow-xl transform transition-all duration-300 ease-out scale-95 opacity-0 flex flex-col"
+                className="bg-white h-full w-full md:max-w-3xl mx-auto rounded-lg shadow-xl transform transition-all duration-300 ease-out scale-95 opacity-0 overflow-y-auto"
                 onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking inside it
             >
                 {/* Full-size Image at the Top */}
-                <div className="w-full h-64 md:h-80 overflow-hidden rounded-t-lg flex-shrink-0">
+                <div className="w-full h-64 md:h-80 overflow-hidden rounded-t-lg">
                     <img 
-                        src={pkg.imageUrl}
+                        src={pkg.imageUrl} 
                         alt="Destination" 
                         className="w-full h-full object-cover"
                     />
                 </div>
 
-                {/* Content Area */}
-                <div className="flex flex-col justify-between flex-grow p-4 md:p-8">
-                    {/* Header with flag and destination */}
-                    <div className="text-center">
-                        <div className="flex items-center space-x-2 justify-center mb-4">
-                            {/* Flag Image */}
-                            <img 
-                                src={flagImages[pkg.destination]} 
-                                alt={`${pkg.destination} flag`} 
-                                className="w-10 h-10 rounded-sm"
-                            />
-                            <h3 className="text-3xl md:text-4xl font-bold text-gray-800">{pkg.destination}</h3>
-                        </div>
-                        <hr className="border-gray-300 my-4" />
+                {/* Header with flag and destination */}
+                <div className="flex items-center space-x-2 justify-center mt-4 mb-4">
+                    {/* Flag Image */}
+                    <img 
+                        src={flagImages[pkg.destination]} 
+                        alt={`${pkg.destination} flag`} 
+                        className="w-10 h-10 rounded-sm"
+                    />
+                    <h3 className="text-4xl font-bold text-gray-800">{pkg.destination}</h3>
+                </div>
+                <hr className="border-gray-300" />
 
-                        {/* Itinerary and Price */}
-                        <p className="text-lg font-medium text-gray-700">{pkg.itinerary}</p>
-                        <p className="text-2xl font-semibold text-blue-600">{pkg.price}</p>
-                    </div>
+                {/* Itinerary and Price */}
+                <p className="my-4 text-lg font-medium text-gray-700 text-center">{pkg.itinerary}</p>
+                <p className="mb-4 text-2xl font-semibold text-center text-blue-600">{pkg.price}</p>
 
-                    {/* Package Inclusions */}
-                    <ul className="list-disc my-4 ml-6 md:ml-8 text-gray-700">
-                        <span className="font-bold">Package inclusions:</span>
-                        {pkg.inclusions.map((item, index) => (
-                            <li key={index} className="ml-4">{item}</li>
-                        ))}
-                    </ul>
+                {/* Package Inclusions */}
+                <ul className="list-disc my-4 ml-8 text-gray-700 space-y-2">
+                    <span className="font-bold">Package inclusions:</span>
+                    {pkg.inclusions.map((item, index) => (
+                        <li key={index} className="ml-4">{item}</li>
+                    ))}
+                </ul>
 
-                    {/* Contact Address */}
-                    <div className="mt-6 text-center text-gray-600">
-                        <p className="font-semibold text-lg">Contact Us</p>
-                        <p>123 Travel Street, Cityville, Country</p>
-                        <p>Email: info@travelagency.com</p>
-                        <p>Phone: +123 456 7890</p>
-                    </div>
+                {/* Contact Address */}
+                <div className="mt-6 text-center text-gray-600">
+                    <p className="font-semibold text-xl">Contact Us</p>
+                    <p>123 Travel Street, Cityville, Country</p>
+                    <p>Email: info@travelagency.com</p>
+                    <p>Phone: +123 456 7890</p>
                 </div>
 
                 {/* Close Button */}
                 <button
-                    className="w-full mt-4 px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-b-lg hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform duration-200"
+                    className="w-full mt-8 px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-b-lg hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform duration-200"
                     onClick={closeModal}
                     aria-label="Close Modal"
                 >
