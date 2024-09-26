@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero"
 import Footer from "../Navbar/Footer"
 import Header from "../Navbar/Header"
 import PackageSection from "../Package/PackageSection.jsx"
+import ServicesSection from "../Service/ServicesSection.jsx"
 // import PackageTab from "../Package/PackageTab.jsx"
 import TravelInfo from "../TravelInfo/TravelInfo"
 import TravelPlace from "../TravelPlace/TravelPlace"
@@ -18,6 +19,7 @@ const Home = () => {
       <TravelInfo />
       <PackageSection />
       {/* <PackageTab /> */}
+      <ServicesSection />
       <TravelPlace />
       <Experience />
       <AboutUs />
