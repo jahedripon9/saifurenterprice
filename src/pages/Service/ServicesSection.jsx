@@ -111,8 +111,8 @@ const ServicesSection = () => {
 
       {/* Detailed Information Modal or Section */}
       {selectedService && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-10 fade-in">
-        <div className="bg-gradient-to-tr from-white to-gray-100 rounded-lg shadow-2xl p-4 sm:p-6 lg:p-8 max-w-sm sm:max-w-md mx-auto transition-transform transform scale-100">
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-10 fade-in ">
+        <div className="bg-gradient-to-tr from-white to-gray-100 rounded-lg shadow-2xl p-8 sm:p-6 lg:p-8 max-w-sm sm:max-w-md mx-auto transition-transform transform scale-100">
           <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-4">
             {selectedService}
           </h3>
