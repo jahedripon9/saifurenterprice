@@ -15,8 +15,8 @@ const Modal = ({ pkg, closeModal }) => {
                     <h3 className="text-2xl font-semibold ">{pkg.destination}</h3>
                 </div><hr />
                 <p className="mb-2 font-semibold text-center">{pkg.itinerary}</p>
-                <p className="mb-2">{pkg.price}</p>
-                <ul className="list-disc ml-4 text-gray-700">
+                <p className="mb-2 font-semibold text-center">{pkg.price}</p>
+                <ul className="list-disc my-2 ml-4 text-gray-700 "> <span className='font-bold '>Package inclusions:</span>
                     {pkg.inclusions.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}

@@ -15,9 +15,9 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
+      <TravelInfo />
       <PackageSection />
       {/* <PackageTab /> */}
-      <TravelInfo />
       <TravelPlace />
       <Experience />
       <AboutUs />

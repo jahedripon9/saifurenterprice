@@ -22,7 +22,7 @@ const PackageCard = ({ pkg, openModal }) => {
                 <h3 className="text-2xl font-semibold ">{pkg.destination}</h3> 
             </div><hr />
             <p className="text-gray-800 mt-2 text-center font-bold text-lg">{pkg.itinerary}</p> <hr />
-            <p className="text-gray-800 mt-2 text-center font-semibold text-xl ">{pkg.price}</p>
+            <p className="text-red-500 mt-2 text-center font-semibold text-xl ">{pkg.price}</p>
             <button className='btn btn-outline my-2'>More Information</button>
         </div>
     );
