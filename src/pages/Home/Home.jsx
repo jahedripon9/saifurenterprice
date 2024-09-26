@@ -13,7 +13,7 @@ import TravelPlace from "../TravelPlace/TravelPlace"
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Header />
       <Hero />
       <TravelInfo />

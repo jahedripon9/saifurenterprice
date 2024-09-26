@@ -3,7 +3,7 @@ import owner from '../../assets/owner.jpg'
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto" id="about">
+    <div className="container mx-auto fade-in" id="about">
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto flex flex-col">
      <div className="lg:w-4/6 mx-auto">

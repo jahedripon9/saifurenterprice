@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center  my-10">
+    <div className="min-h-screen flex items-center justify-center  my-10 fade-in">
       <div className="bg-white p-10 rounded-xl shadow-2xl w-full max-w-4xl">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
           Get in Touch

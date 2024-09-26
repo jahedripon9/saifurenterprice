@@ -4,8 +4,10 @@ import flightImage from "../../assets/flight-svgrepo-com.svg";
 
 const TravelInfo = () => {
   return (
-    <div className="my-16 px-5 lg:px-24 " id="info">
-      <h2 className="text-center text-4xl font-bold">Your Travel Information</h2>
+    <div className="my-16 px-5 lg:px-24 fade-in" id="info">
+      <h2 className="text-center text-4xl font-bold">
+        Your Travel Information
+      </h2>
       <p className="text-center text-lg mt-4 mb-12 text-gray-500">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       </p>
@@ -30,11 +32,7 @@ const TravelInfo = () => {
         {/* Card 2 - Book a Trip */}
         <div className="bg-white border border-gray-200 shadow-md rounded-tr-3xl rounded-bl-3xl p-6 flex items-center hover:shadow-xl  transition duration-300">
           <div className="flex justify-center mr-4">
-            <img
-              className="w-16 h-16"
-              src={bookingImage}
-              alt="Book a Trip"
-            />
+            <img className="w-16 h-16" src={bookingImage} alt="Book a Trip" />
           </div>
           <div className="text-left">
             <h3 className="text-xl font-semibold">Book a Trip</h3>
