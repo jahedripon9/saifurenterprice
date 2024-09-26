@@ -22,7 +22,7 @@ const PackageTab = () => {
             </p>
             <div className="card-actions justify-center">
               <button className="  ">
-                {" "}
+               
                 <IndiaModal></IndiaModal>
               </button>
             </div>
