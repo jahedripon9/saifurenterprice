@@ -113,7 +113,7 @@ const Contact = () => {
           <p className="text-2xl font-extrabold text-gray-800 mb-2 tracking-wide">
             Saifur Enterprise
           </p>
-          <p className="text-lg font-bold italic text-gray-600 mb-3">
+          <p className="text-sm font-bold italic text-gray-600 mb-3 sm:text-lg">
             Proprietor: Saifur Rahman Sabul
           </p>
 
