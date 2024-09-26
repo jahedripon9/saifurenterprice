@@ -112,11 +112,11 @@ const ServicesSection = () => {
       {/* Detailed Information Modal or Section */}
       {selectedService && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-10 fade-in">
-        <div className="bg-gradient-to-tr from-white to-gray-100 rounded-lg shadow-2xl p-8 max-w-md mx-auto transition-transform transform scale-100">
-          <h3 className="text-3xl font-extrabold text-gray-800 mb-4">
+        <div className="bg-gradient-to-tr from-white to-gray-100 rounded-lg shadow-2xl p-4 sm:p-6 lg:p-8 max-w-sm sm:max-w-md mx-auto transition-transform transform scale-100">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-4">
             {selectedService}
           </h3>
-          <ol className="mt-2 text-gray-800 my-3 list-decimal list-outside text-justify">
+          <ol className="mt-2 text-gray-800 my-3 list-decimal list-outside text-justify text-sm sm:text-base">
             {serviceDetails[selectedService]
               .trim() // Trim any leading/trailing whitespace
               .split('\n') // Split by new line to create an array
@@ -124,9 +124,9 @@ const ServicesSection = () => {
                 <li key={index}>{detail}</li>
               ))}
           </ol>
-          <div className="flex justify-center mt-6"> {/* Centering the button */}
+          <div className="flex justify-center mt-4 sm:mt-6"> {/* Centering the button */}
             <button
-              className="px-6 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition-all duration-200 transform hover:scale-105"
+              className="px-4 sm:px-6 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition-all duration-200 transform hover:scale-105"
               onClick={() => setSelectedService(null)}
             >
               Close
@@ -134,6 +134,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
+      
       
       )}
     </div>
