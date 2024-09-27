@@ -1,6 +1,7 @@
 import AboutUs from "../AboutUs/AboutUs"
 import Contact from "../Contact/Contact"
 import Experience from "../Experience/Experience"
+import Testimonial from "../Experience/Testimonial"
 import Hero from "../Hero/Hero"
 import Footer from "../Navbar/Footer"
 import Header from "../Navbar/Header"
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <PackageTab /> */}
       <ServicesSection />
       <TravelPlace />
+      <Testimonial />
       <Experience />
       <AboutUs />
       <Contact />
