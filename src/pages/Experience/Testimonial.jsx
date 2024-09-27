@@ -43,8 +43,8 @@ const Testimonial = () => {
             <h2 className="text-center text-4xl font-bold">
                 Visa Success Achieved
             </h2>
-            <p className="text-center text-lg mt-4 mb-12 text-gray-900">
-                "{currentMessage}"
+            <p className="text-center text-lg mt-4 mb-12 text-gray-500">
+                {currentMessage}
             </p>
             {/* Carousel container with smooth sliding */}
             <div className="relative w-full h-96 overflow-hidden">
@@ -55,43 +55,28 @@ const Testimonial = () => {
                     }}
                 >
                     {/* Slide 1 */}
-                    <div className="w-full flex-shrink-0 h-full flex flex-col justify-center items-center">
-                        <img src={img1} className="block max-h-full object-contain" alt="Description 1" />
-                        <p className="mt-2 text-sm text-gray-600">Caption for Image 1</p>
+                    <div className="w-full flex-shrink-0 h-full flex justify-center items-center">
+                        <img src={img1} className="block max-h-full object-contain" alt="Visa Image 1" />
                     </div>
 
                     {/* Slide 2 */}
-                    <div className="w-full flex-shrink-0 h-full flex flex-col justify-center items-center">
-                        <img src={img2} className="block max-h-full object-contain" alt="Description 2" />
-                        <p className="mt-2 text-sm text-gray-600">Caption for Image 2</p>
+                    <div className="w-full flex-shrink-0 h-full flex justify-center items-center">
+                        <img src={img2} className="block max-h-full object-contain" alt="Visa Image 2" />
                     </div>
 
                     {/* Slide 3 */}
-                    <div className="w-full flex-shrink-0 h-full flex flex-col justify-center items-center">
-                        <img src={img1} className="block max-h-full object-contain" alt="Description 3" />
-                        <p className="mt-2 text-sm text-gray-600">Caption for Image 3</p>
+                    <div className="w-full flex-shrink-0 h-full flex justify-center items-center">
+                        <img src={img1} className="block max-h-full object-contain" alt="Visa Image 3" />
                     </div>
 
                     {/* Slide 4 */}
-                    <div className="w-full flex-shrink-0 h-full flex flex-col justify-center items-center">
-                        <img src={img2} className="block max-h-full object-contain" alt="Description 4" />
-                        <p className="mt-2 text-sm text-gray-600">Caption for Image 4</p>
+                    <div className="w-full flex-shrink-0 h-full flex justify-center items-center">
+                        <img src={img2} className="block max-h-full object-contain" alt="Visa Image 4" />
                     </div>
                 </div>
             </div>
 
-            {/* Carousel controls */}
-            <div className="flex justify-center gap-2 py-2 ">
-                {[...Array(totalSlides)].map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setActiveSlide(index)}
-                        className={`btn btn-xs ${activeSlide === index ? 'btn-active' : ''}`}
-                    >
-                        {index + 1}
-                    </button>
-                ))}
-            </div>
+            {/* Removed Carousel controls as per the requirement */}
         </div>
     );
 };
