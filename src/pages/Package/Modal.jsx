@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import logoImage from "../..//assets/logo1.png"; // Add the path to your logo image
+
 
 // Flag image URLs
 const flagImages = {
@@ -72,8 +74,11 @@ const Modal = ({ pkg, closeModal }) => {
         {/* Contact Address */}
         {/* Contact info Start */}
         <div className="mt-5 p-3  text-center text-gray-700 ">
-          <p className="text-2xl font-extrabold text-gray-800 mb-2 tracking-wide">
-            Saifur Enterprise
+        <div className="flex justify-center mb-6">
+            <img className="w-24 h-auto" src={logoImage} alt="Logo" />
+          </div>
+          <p className="text-2xl font-extrabold text-sky-600 mb-2 tracking-wide">
+            <span className="text-sky-700">Saifur</span> Enterprise
           </p>
           <p className="text-lg font-bold italic text-gray-600 mb-3">
             Proprietor: Saifur Rahman Sabul

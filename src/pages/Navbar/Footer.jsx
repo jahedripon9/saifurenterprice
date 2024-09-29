@@ -1,3 +1,5 @@
+import logoImage from "../..//assets/logo1.png"; // Add the path to your logo image
+
 const Footer = () => {
   return (
     <div className="container mx-auto bg-slate-100 rounded-t-2xl ">
@@ -5,9 +7,12 @@ const Footer = () => {
         {" "}
         <hr />
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="flex justify-center sm:mb:2 mb-0 sm:mr-5 mr-0">
+            <img className="w-12 h-auto" src={logoImage} alt="Logo" />
+          </div>
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <span className="ml-3 text-xl text-red-500 font-bold">
-              Saifur Enterprise
+            <span className="ml-3 text-xl text-sky-600 font-bold">
+              <span className="text-sky-700">Saifur</span> Enterprise
             </span>
           </a>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">

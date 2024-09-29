@@ -1,6 +1,8 @@
 // ContactForm.jsx
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
+import logoImage from "../..//assets/logo1.png"; // Add the path to your logo image
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -110,8 +112,11 @@ const Contact = () => {
         </form>
         {/* Contact info Start */}
         <div className="mt-8 p-8  text-center text-gray-700 transition-transform transform hover:scale-105 duration-300">
-          <p className="text-2xl font-extrabold text-gray-800 mb-2 tracking-wide">
-            Saifur Enterprise
+        <div className="flex justify-center mb-6">
+            <img className="w-24 h-auto" src={logoImage} alt="Logo" />
+          </div>
+          <p className="text-2xl font-extrabold text-sky-600 mb-2 tracking-wide">
+            <span className="text-sky-700">Saifur</span> Enterprise
           </p>
           <p className="text-sm font-bold italic text-gray-600 mb-3 sm:text-lg">
             Proprietor: Saifur Rahman Sabul

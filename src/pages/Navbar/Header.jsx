@@ -1,9 +1,11 @@
 import React from 'react'
+import logoImage from "../..//assets/logo1.png"; // Add the path to your logo image
+
 
 const Header = () => {
   return (
-    <div className=''>
-      <div className="navbar fixed bg-gray-200 rounded-b-xl z-10 opacity-75">
+    <div className=' '>
+      <div className="navbar fixed bg-gray-200 rounded-b-xl z-10 opacity-75 w-full ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,8 +32,11 @@ const Header = () => {
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <a href='/' className=" text-red-600 font-bold text-sm lg:text-3xl">Saifur Enterprise</a>
-        </div>
+          <div className="flex justify-center mt-4 mb-4 mr-5">
+            <a href='/'><img className="w-14 sm:w-20 h-auto" src={logoImage} alt="Logo" /></a> 
+          </div>
+          <a href='/' className=" text-sky-600 font-bold text-sm lg:text-3xl"><span className='text-sky-700'>Saifur</span> Enterprise</a>
+        </div> 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium text-xl">
             <li><a href="#info">Travel Info</a></li>
