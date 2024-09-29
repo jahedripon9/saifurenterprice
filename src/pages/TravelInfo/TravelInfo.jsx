@@ -11,17 +11,12 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center z-50">
       <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 z-10">
-        <div className="flex justify-between items-center fixed">
-          <h2 className="text-2xl font-bold">Business Information</h2>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 font-bold text-xl"
-          >
-            &times;
-          </button>
+        <div className="flex justify-between items-center fixed ">
+          <h2 className=" text-2xl font-bold ">Business Information: </h2>
+          
         </div>
-        <div className="mt-5 p-3 text-center text-gray-700">
-          <div className="flex justify-center mb-6">
+        <div className="mt-5 p-3 text-center text-gray-700 ">
+          <div className="flex justify-center my-6">
             <img className="w-24 h-auto" src={logoImage} alt="Logo" />
           </div>
           <p className="text-2xl font-extrabold text-sky-600 mb-2 tracking-wide">
@@ -108,9 +103,15 @@ const Modal = ({ isOpen, onClose }) => {
               </p>
             </div>
           </div>
+          <button
+            onClick={onClose}
+            className="px-4 sm:px-6 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition-all duration-200 transform hover:scale-105 mt-5 font-semibold"
+          > Close
+            &times;
+          </button>
         </div>
-      </div>
-
+             </div>
+      
       {/* Full page blurred background */}
       <div
         className="absolute inset-0 backdrop-blur-md"
