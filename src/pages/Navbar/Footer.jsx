@@ -8,9 +8,9 @@ const Footer = () => {
         <hr />
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <div className="flex justify-center sm:mb:2 mb-0 sm:mr-5 mr-0">
-            <img className="w-12 h-auto" src={logoImage} alt="Logo" />
+            <a href='/'><img className="w-12 h-auto" src={logoImage} alt="Logo" /></a>
           </div>
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <a href='/' className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <span className="ml-3 text-xl text-sky-600 font-bold">
               <span className="text-sky-700">Saifur</span> Enterprise
             </span>

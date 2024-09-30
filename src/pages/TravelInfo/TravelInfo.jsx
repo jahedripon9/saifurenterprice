@@ -13,7 +13,6 @@ const Modal = ({ isOpen, onClose }) => {
       <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 z-10">
         <div className="flex justify-between items-center fixed ">
           <h2 className=" text-2xl font-bold ">Business Information: </h2>
-          
         </div>
         <div className="mt-5 p-3 text-center text-gray-700 ">
           <div className="flex justify-center my-6">
@@ -85,19 +84,20 @@ const Modal = ({ isOpen, onClose }) => {
             {/* Phone Numbers */}
             <div className="flex items-start justify-center space-x-3 bg-white rounded-lg p-2 shadow-md hover:shadow-lg transition-shadow duration-200">
               <svg
-                className="w-6 h-6 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 text-blue-600"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 5c0 10.493 8.507 19 19 19M8 5c0 7.18 5.82 13 13 13"
-                ></path>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                />
               </svg>
+
               <p className="text-gray-800">
                 Phone: +8801728 105533, +8801818 989713
               </p>
@@ -106,12 +106,13 @@ const Modal = ({ isOpen, onClose }) => {
           <button
             onClick={onClose}
             className="px-4 sm:px-6 py-2 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition-all duration-200 transform hover:scale-105 mt-5 font-semibold"
-          > Close
-            &times;
+          >
+            {" "}
+            Close &times;
           </button>
         </div>
-             </div>
-      
+      </div>
+
       {/* Full page blurred background */}
       <div
         className="absolute inset-0 backdrop-blur-md"
