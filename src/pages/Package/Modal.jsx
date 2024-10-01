@@ -7,6 +7,9 @@ const flagImages = {
   India: "https://flagcdn.com/in.svg", // Flag for India
   "Sri Lanka": "https://flagcdn.com/lk.svg", // Flag for Sri Lanka
   Maldives: "https://flagcdn.com/mv.svg", // Flag for Maldives
+  Vietnam : 'https://flagcdn.com/vn.svg', // Flag for Vietnam
+  Dubai  : 'https://flagcdn.com/ae.svg', // Flag for Dubai 
+  SaudiArabia  : 'https://flagcdn.com/sa.svg', // saudi arabia
 };
 
 const Modal = ({ pkg, closeModal }) => {

@@ -1,5 +1,6 @@
 import AboutUs from "../AboutUs/AboutUs"
 import Contact from "../Contact/Contact"
+// import CarouselTestimonial from "../Experience/CarouselTestimonial.jsx"
 import Experience from "../Experience/Experience"
 import Testimonial from "../Experience/Testimonial"
 import Hero from "../Hero/Hero"
@@ -25,6 +26,7 @@ const Home = () => {
       <ServicesSection />
       <TravelPlace />
       <Testimonial />
+      {/* <CarouselTestimonial /> */}
       <Experience />
       <AboutUs />
       <Contact />
