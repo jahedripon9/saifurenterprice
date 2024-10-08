@@ -4,7 +4,7 @@ import logoImage from "../..//assets/logo1.png"; // Add the path to your logo im
 
 const Header = () => {
   return (
-    <div className=' '>
+    <div className='max-w-screen-xl mx-auto '>
       <div className="navbar fixed bg-gray-200 rounded-b-xl z-10 opacity-75 w-full ">
         <div className="navbar-start">
           <div className="dropdown">

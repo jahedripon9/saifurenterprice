@@ -2,7 +2,7 @@ import logoImage from "../..//assets/logo1.png"; // Add the path to your logo im
 
 const Footer = () => {
   return (
-    <div className="container mx-auto bg-slate-100 rounded-t-2xl ">
+    <div className="max-w-screen-xl mx-auto bg-slate-100 rounded-t-2xl ">
       <footer className="text-gray-600 body-font">
         {" "}
         <hr />
